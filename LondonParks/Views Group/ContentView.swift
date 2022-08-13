@@ -6,11 +6,18 @@
 //
 
 import SwiftUI
+import Foundation
+
 
 struct ContentView: View {
+    var park = parksData
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(parksData, id: \.id){ park in
+            Text(parksData)
+            //Text("1")
+        }
     }
 }
 

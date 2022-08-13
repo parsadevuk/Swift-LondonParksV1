@@ -15,6 +15,7 @@
 		EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */; };
 		EE49A2B028A7D5E2001B1A43 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */; };
 		EE49A2B228A7D67C001B1A43 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2B128A7D67C001B1A43 /* Parks.swift */; };
+		EE49A2B728A80EAC001B1A43 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2B628A80EAC001B1A43 /* landmarkData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsView.swift; sourceTree = "<group>"; };
 		EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		EE49A2B128A7D67C001B1A43 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
+		EE49A2B628A80EAC001B1A43 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +61,11 @@
 		EE49A29C28A7D443001B1A43 /* LondonParks */ = {
 			isa = PBXGroup;
 			children = (
-				EE49A2AB28A7D54D001B1A43 /* londonParksData.json */,
-				EE49A29D28A7D443001B1A43 /* LondonParksApp.swift */,
-				EE49A29F28A7D443001B1A43 /* ContentView.swift */,
+				EE49A2B328A7DA2C001B1A43 /* Model Group */,
+				EE49A2B428A7DA3B001B1A43 /* Resources Group */,
+				EE49A2B528A7DA49001B1A43 /* Views Group */,
 				EE49A2A128A7D444001B1A43 /* Assets.xcassets */,
 				EE49A2A328A7D444001B1A43 /* Preview Content */,
-				EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */,
-				EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */,
-				EE49A2B128A7D67C001B1A43 /* Parks.swift */,
 			);
 			path = LondonParks;
 			sourceTree = "<group>";
@@ -77,6 +76,34 @@
 				EE49A2A428A7D444001B1A43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE49A2B328A7DA2C001B1A43 /* Model Group */ = {
+			isa = PBXGroup;
+			children = (
+				EE49A29D28A7D443001B1A43 /* LondonParksApp.swift */,
+				EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */,
+			);
+			path = "Model Group";
+			sourceTree = "<group>";
+		};
+		EE49A2B428A7DA3B001B1A43 /* Resources Group */ = {
+			isa = PBXGroup;
+			children = (
+				EE49A2B128A7D67C001B1A43 /* Parks.swift */,
+				EE49A2B628A80EAC001B1A43 /* landmarkData.json */,
+				EE49A2AB28A7D54D001B1A43 /* londonParksData.json */,
+			);
+			path = "Resources Group";
+			sourceTree = "<group>";
+		};
+		EE49A2B528A7DA49001B1A43 /* Views Group */ = {
+			isa = PBXGroup;
+			children = (
+				EE49A29F28A7D443001B1A43 /* ContentView.swift */,
+				EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */,
+			);
+			path = "Views Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE49A2A528A7D444001B1A43 /* Preview Assets.xcassets in Resources */,
+				EE49A2B728A80EAC001B1A43 /* landmarkData.json in Resources */,
 				EE49A2AC28A7D54D001B1A43 /* londonParksData.json in Resources */,
 				EE49A2A228A7D444001B1A43 /* Assets.xcassets in Resources */,
 			);

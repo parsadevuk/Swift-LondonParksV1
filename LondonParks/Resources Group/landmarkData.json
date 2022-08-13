@@ -1,9 +1,6 @@
-//lots of data has been downloaded from https://www.londonxlondon.com/parks-in-london/
-// Pictures are downloaded from free resources
-
 [
     {
-        "name": "St James's Park",
+        "name": "Turtle Rock",
         "category": "Rivers",
         "city": "Twentynine Palms",
         "state": "California",
@@ -15,15 +12,11 @@
             "longitude": -116.166868,
             "latitude": 34.011286
         },
-        "description": "St James’s Park is hands down our favourite of the famous parks in London.
-Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares.
-It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you.
-The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck.
-The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
         "imageName": "turtlerock"
     },
     {
-        "name": "Green Park",
+        "name": "Silver Salmon Creek",
         "category": "Lakes",
         "city": "Port Alsworth",
         "state": "Alaska",
@@ -35,12 +28,11 @@ The sight of the lake, islands and birds certainly makes it a gorgeous sight. If
             "longitude": -152.665167,
             "latitude": 59.980167
         },
-        "description": "Another of London’s “royal parks”, Green Park is a fitting name for this lush oasis in the centre of London.
-Within the city of Westminster, it covers about 40 acres in total. Unlike some of the other London parks, Green Park is relatively simple with no lakes and plenty of trees.
-While today it’s blissfully peaceful, its past was a little more chequered – it was once known as a hotspot for highwaymen and thieves."
+        "description": "Suscipit inceptos est felis purus aenean aliquet adipiscing diam venenatis, augue nibh duis neque aliquam tellus condimentum sagittis vivamus, cras ante etiam sit conubia elit tempus accumsan libero, mattis per erat habitasse cubilia ligula penatibus curae. Sagittis lorem augue arcu blandit libero molestie non ullamcorper, finibus imperdiet iaculis ad quam per luctus neque, ligula curae mauris parturient diam auctor eleifend laoreet ridiculus, hendrerit adipiscing sociosqu pretium nec velit aliquam. Inceptos egestas maecenas imperdiet eget id donec nisl curae congue, massa tortor vivamus ridiculus integer porta ultrices venenatis aliquet, curabitur et posuere blandit magnis dictum auctor lacinia, eleifend dolor in ornare vulputate ipsum morbi felis. Faucibus cursus malesuada orci ultrices diam nisl taciti torquent, tempor eros suspendisse euismod condimentum dis velit mi tristique, a quis etiam dignissim dictum porttitor lobortis ad fermentum, sapien consectetur dui dolor purus elit pharetra. Interdum mattis sapien ac orci vestibulum vulputate laoreet proin hac, maecenas mollis ridiculus morbi praesent cubilia vitae ligula vel, sem semper volutpat curae mauris justo nisl luctus, non eros primis ultrices nascetur erat varius integer.",
+        "imageName": "silversalmoncreek"
     },
     {
-        "name": "Hyde Park",
+        "name": "Chilkoot Trail",
         "category": "Mountains",
         "city": "Skagway",
         "state": "Alaska",
@@ -56,7 +48,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "chilkoottrail"
     },
     {
-        "name": "Kensington Gardens",
+        "name": "St. Mary Lake",
         "category": "Lakes",
         "city": "Browning",
         "state": "Montana",
@@ -72,7 +64,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "stmarylake"
     },
     {
-        "name": "St Dunstan in the East",
+        "name": "Twin Lake",
         "category": "Lakes",
         "city": "Twin Lakes",
         "state": "Alaska",
@@ -88,7 +80,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "twinlake"
     },
     {
-        "name": "Holland Park",
+        "name": "Lake McDonald",
         "category": "Mountains",
         "city": "West Glacier",
         "state": "Montana",
@@ -104,7 +96,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "lakemcdonald"
     },
     {
-        "name": "Chelsea Embankment Gardens",
+        "name": "Charley Rivers",
         "category": "Rivers",
         "city": "Eaking",
         "state": "Alaska",
@@ -120,7 +112,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "charleyrivers"
     },
     {
-        "name": "Richmond Park",
+        "name": "Icy Bay",
         "category": "Mountains",
         "city": "Icy Bay",
         "state": "Alaska",
@@ -136,7 +128,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "icybay"
     },
     {
-        "name": "Bushy Park",
+        "name": "Rainbow Lake",
         "category": "Lakes",
         "city": "Willow",
         "state": "Alaska",
@@ -152,7 +144,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "rainbowlake"
     },
     {
-        "name": "Ealing Common",
+        "name": "Hidden Lake",
         "category": "Lakes",
         "city": "Newhalem",
         "state": "Washington",
@@ -168,7 +160,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "hiddenlake"
     },
     {
-        "name": "Ravenscourt Park",
+        "name": "Chincoteague",
         "category": "Rivers",
         "city": "Chincoteague",
         "state": "Virginia",
@@ -184,7 +176,7 @@ While today it’s blissfully peaceful, its past was a little more chequered –
         "imageName": "chincoteague"
     },
     {
-        "name": "Greenwich Park",
+        "name": "Lake Umbagog",
         "category": "Lakes",
         "city": "Errol",
         "state": "New Hampshire",
