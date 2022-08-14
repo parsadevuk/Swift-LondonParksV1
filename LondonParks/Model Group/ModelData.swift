@@ -7,8 +7,8 @@
 
 import Foundation
 
-var parksData : [Parks] = load("landmarkData.json")
-
+var parksData:[Parks2]  = load("londonParksData.json")
+//: [Parks]
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
 

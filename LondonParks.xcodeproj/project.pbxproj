@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE09599328A9521A006C28BD /* londonParksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09599228A9521A006C28BD /* londonParksData.swift */; };
 		EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A29D28A7D443001B1A43 /* LondonParksApp.swift */; };
 		EE49A2A028A7D443001B1A43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A29F28A7D443001B1A43 /* ContentView.swift */; };
 		EE49A2A228A7D444001B1A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2A128A7D444001B1A43 /* Assets.xcassets */; };
@@ -16,9 +17,15 @@
 		EE49A2B028A7D5E2001B1A43 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */; };
 		EE49A2B228A7D67C001B1A43 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2B128A7D67C001B1A43 /* Parks.swift */; };
 		EE49A2B728A80EAC001B1A43 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2B628A80EAC001B1A43 /* landmarkData.json */; };
+		EE49A2B928A841E9001B1A43 /* imageCircleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */; };
+		EE49A2BC28A85A62001B1A43 /* LondonParkData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */; };
+		EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2BE28A85E53001B1A43 /* ParksModel.swift */; };
+		EE65944528A95D4500E35C9C /* onBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65944428A95D4500E35C9C /* onBoardingCard.swift */; };
+		EE65944928A9632700E35C9C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65944828A9632700E35C9C /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE09599228A9521A006C28BD /* londonParksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = londonParksData.swift; sourceTree = "<group>"; };
 		EE49A29A28A7D443001B1A43 /* LondonParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE49A29D28A7D443001B1A43 /* LondonParksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LondonParksApp.swift; sourceTree = "<group>"; };
 		EE49A29F28A7D443001B1A43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +36,11 @@
 		EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		EE49A2B128A7D67C001B1A43 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
 		EE49A2B628A80EAC001B1A43 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCircleTheme.swift; sourceTree = "<group>"; };
+		EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LondonParkData.xcdatamodel; sourceTree = "<group>"; };
+		EE49A2BE28A85E53001B1A43 /* ParksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksModel.swift; sourceTree = "<group>"; };
+		EE65944428A95D4500E35C9C /* onBoardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingCard.swift; sourceTree = "<group>"; };
+		EE65944828A9632700E35C9C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 		EE49A29C28A7D443001B1A43 /* LondonParks */ = {
 			isa = PBXGroup;
 			children = (
+				EE49A2BD28A85E36001B1A43 /* Data */,
 				EE49A2B328A7DA2C001B1A43 /* Model Group */,
 				EE49A2B428A7DA3B001B1A43 /* Resources Group */,
 				EE49A2B528A7DA49001B1A43 /* Views Group */,
@@ -90,6 +103,7 @@
 		EE49A2B428A7DA3B001B1A43 /* Resources Group */ = {
 			isa = PBXGroup;
 			children = (
+				EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */,
 				EE49A2B128A7D67C001B1A43 /* Parks.swift */,
 				EE49A2B628A80EAC001B1A43 /* landmarkData.json */,
 				EE49A2AB28A7D54D001B1A43 /* londonParksData.json */,
@@ -102,8 +116,20 @@
 			children = (
 				EE49A29F28A7D443001B1A43 /* ContentView.swift */,
 				EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */,
+				EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */,
+				EE65944428A95D4500E35C9C /* onBoardingCard.swift */,
+				EE65944828A9632700E35C9C /* MapView.swift */,
 			);
 			path = "Views Group";
+			sourceTree = "<group>";
+		};
+		EE49A2BD28A85E36001B1A43 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EE49A2BE28A85E53001B1A43 /* ParksModel.swift */,
+				EE09599228A9521A006C28BD /* londonParksData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,9 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE49A2BC28A85A62001B1A43 /* LondonParkData.xcdatamodeld in Sources */,
+				EE09599328A9521A006C28BD /* londonParksData.swift in Sources */,
+				EE65944528A95D4500E35C9C /* onBoardingCard.swift in Sources */,
+				EE65944928A9632700E35C9C /* MapView.swift in Sources */,
 				EE49A2A028A7D443001B1A43 /* ContentView.swift in Sources */,
+				EE49A2B928A841E9001B1A43 /* imageCircleTheme.swift in Sources */,
 				EE49A2B228A7D67C001B1A43 /* Parks.swift in Sources */,
 				EE49A2B028A7D5E2001B1A43 /* ModelData.swift in Sources */,
+				EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */,
 				EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */,
 				EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */,
 			);
@@ -383,6 +415,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */,
+			);
+			currentVersion = EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */;
+			path = LondonParkData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EE49A29228A7D443001B1A43 /* Project object */;
 }
