@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        onBoardingCard()
+        onBoardingCard(parkNumber: 0)
 //            NavigationView{
 //                VStack{
 //                    List(parksData, id: \.id){ parksData in
