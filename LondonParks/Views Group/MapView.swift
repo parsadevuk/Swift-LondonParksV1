@@ -26,6 +26,7 @@ struct MapView: View {
                 span: MKCoordinateSpan(latitudeDelta: 0.008, longitudeDelta: 0.008)
             )
         }
+    
 }
 
 struct MapView_Previews: PreviewProvider {

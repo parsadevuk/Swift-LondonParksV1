@@ -18,6 +18,7 @@ struct Parks2 : Hashable, Codable {
     var shortInfo: String
     var city: String
     var gradientColors: [String]
+    var picFrameColor: String
     var isFeatured: Bool
     var isFavorite: Bool
     var gallery : [String]

@@ -15,7 +15,14 @@ import MapKit
 struct onBoardingCard: View {
     var parkNumber : Int
     
+    
     var body: some View {
+        let varibleColor : [Color] = [
+            (Color(hex: parksData[parkNumber].gradientColors[0])!),
+            (Color(hex: parksData[parkNumber].gradientColors[1])!),
+            (Color(hex: parksData[parkNumber].picFrameColor)!)
+            ]
+        //gColor s are gradient colors
         TabView{
             ScrollView{
                 Text(parksData[parkNumber].name)
@@ -23,14 +30,16 @@ struct onBoardingCard: View {
                     .bold()
                     .foregroundColor(.black)
                 MapView(coordinate: parksData[parkNumber].locationCoordinate)
-                    .frame(height: 250)
+                    .frame(height: 200)
+//                    .offset(y: -30)
+//                    .padding(.bottom, -30)
                     .ignoresSafeArea(edges: .top)
                     .cornerRadius(15)
-                imageCircleTheme(imageName: Image(parksData[parkNumber].imageName), imageSize: 200, ollw: 5, shRad: 5, cColor: Color.orange)
+                    .shadow(color: varibleColor[2], radius: 10)
+                imageCircleTheme(imageName: Image(parksData[parkNumber].imageName), imageSize: 200, ollw: 5, shRad: 5, cColor: varibleColor[2])
                     .offset(y:-90)
                     .padding(.bottom,-90)
                 Divider()
-                
                 VStack(alignment: .leading){
                     Spacer()
                     Text("""
@@ -43,31 +52,49 @@ City: \(parksData[0].city)
                     Divider()
                     HStack{
                         Text("About \(parksData[parkNumber].name)")
-                            .font(.largeTitle)
+                            .font(.title3)
                             .padding(.leading, 20)
                         Spacer()
                     }
                     Text(parksData[parkNumber].shortInfo)
-                        .font(.title)
-                        .offset(y:10)
+                        .font(.body)
+                        //.offset(y:10)
                         //.padding(.bottom,10)
-                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 10))
+                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 10))
                         .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
-                    HStack{
-                        Text("Hi")
+                    HStack(alignment: .center, spacing: 0){
+                        Button(action: {
+                            gMap(latitude: parksData[parkNumber].locationCoordinate.latitude, longitude: parksData[parkNumber].locationCoordinate.longitude)
+                        }, label: {
+                            Text("Google Map")
+                            Image("icon-google-maps")
+                                .resizable()
+                                .frame(width: 50, height: 50, alignment: .leading)
+                                .shadow(radius: 5)
+                        })
                         Spacer()
-                        Text("Ho")
+                        Text("Map")
+                        Image("icon-apple-maps")
+                            .resizable()
+                            .frame(width: 50, height: 50, alignment: .leading)
+                            .shadow(radius: 5)
                     }
+                    .padding(.horizontal, 30)
+                        Text("Full description")
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                            .font(.largeTitle)
+                            .padding(.horizontal, 30)
                 }
                 .background()
                 .cornerRadius(10)
             }
             .tabViewStyle(PageTabViewStyle())
             .padding(.vertical, 20)
-            .padding()
-            .background(LinearGradient(gradient: Gradient(colors: [.blue,.black]), startPoint: .top, endPoint: .bottom))
+            .padding(10)
+            .background(LinearGradient(gradient: Gradient(colors: [varibleColor[0],varibleColor[1]]), startPoint: .top, endPoint: .bottom))
             .ignoresSafeArea(.all, edges: [.top, .bottom])
+            .shadow(color: varibleColor[2], radius: 10)
         }
     }
 }
@@ -79,41 +106,6 @@ struct onBoardingCard_Previews: PreviewProvider {
     }
 }
 
-extension Color {
-  init(_ hex: UInt, alpha: Double = 1) {
-    self.init(
-      .sRGB,
-      red: Double((hex >> 16) & 0xFF) / 255,
-      green: Double((hex >> 8) & 0xFF) / 255,
-      blue: Double(hex & 0xFF) / 255,
-      opacity: alpha
-    )
-  }
-}
-extension UIColor {
-    public convenience init?(hex: String) {
-        let r, g, b, a: CGFloat
 
-        if hex.hasPrefix("#") {
-            let start = hex.index(hex.startIndex, offsetBy: 1)
-            let hexColor = String(hex[start...])
 
-            if hexColor.count == 8 {
-                let scanner = Scanner(string: hexColor)
-                var hexNumber: UInt64 = 0
 
-                if scanner.scanHexInt64(&hexNumber) {
-                    r = CGFloat((hexNumber & 0xff000000) >> 24) / 255
-                    g = CGFloat((hexNumber & 0x00ff0000) >> 16) / 255
-                    b = CGFloat((hexNumber & 0x0000ff00) >> 8) / 255
-                    a = CGFloat(hexNumber & 0x000000ff) / 255
-
-                    self.init(red: r, green: g, blue: b, alpha: a)
-                    return
-                }
-            }
-        }
-
-        return nil
-    }
-}

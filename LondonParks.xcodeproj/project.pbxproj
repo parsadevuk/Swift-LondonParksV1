@@ -20,6 +20,8 @@
 		EE49A2B928A841E9001B1A43 /* imageCircleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */; };
 		EE49A2BC28A85A62001B1A43 /* LondonParkData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */; };
 		EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2BE28A85E53001B1A43 /* ParksModel.swift */; };
+		EE52C96928AAF7B1004C2E00 /* MapProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52C96828AAF7B1004C2E00 /* MapProcess.swift */; };
+		EE52C96B28AAF914004C2E00 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52C96A28AAF914004C2E00 /* extensions.swift */; };
 		EE65944528A95D4500E35C9C /* onBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65944428A95D4500E35C9C /* onBoardingCard.swift */; };
 		EE65944928A9632700E35C9C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65944828A9632700E35C9C /* MapView.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +41,8 @@
 		EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCircleTheme.swift; sourceTree = "<group>"; };
 		EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LondonParkData.xcdatamodel; sourceTree = "<group>"; };
 		EE49A2BE28A85E53001B1A43 /* ParksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksModel.swift; sourceTree = "<group>"; };
+		EE52C96828AAF7B1004C2E00 /* MapProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProcess.swift; sourceTree = "<group>"; };
+		EE52C96A28AAF914004C2E00 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EE65944428A95D4500E35C9C /* onBoardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingCard.swift; sourceTree = "<group>"; };
 		EE65944828A9632700E35C9C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,7 @@
 		EE49A29C28A7D443001B1A43 /* LondonParks */ = {
 			isa = PBXGroup;
 			children = (
+				EE52C96728AAF790004C2E00 /* Processing */,
 				EE49A2BD28A85E36001B1A43 /* Data */,
 				EE49A2B328A7DA2C001B1A43 /* Model Group */,
 				EE49A2B428A7DA3B001B1A43 /* Resources Group */,
@@ -130,6 +135,15 @@
 				EE09599228A9521A006C28BD /* londonParksData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		EE52C96728AAF790004C2E00 /* Processing */ = {
+			isa = PBXGroup;
+			children = (
+				EE52C96828AAF7B1004C2E00 /* MapProcess.swift */,
+				EE52C96A28AAF914004C2E00 /* extensions.swift */,
+			);
+			path = Processing;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +225,9 @@
 				EE49A2A028A7D443001B1A43 /* ContentView.swift in Sources */,
 				EE49A2B928A841E9001B1A43 /* imageCircleTheme.swift in Sources */,
 				EE49A2B228A7D67C001B1A43 /* Parks.swift in Sources */,
+				EE52C96B28AAF914004C2E00 /* extensions.swift in Sources */,
 				EE49A2B028A7D5E2001B1A43 /* ModelData.swift in Sources */,
+				EE52C96928AAF7B1004C2E00 /* MapProcess.swift in Sources */,
 				EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */,
 				EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */,
 				EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */,
