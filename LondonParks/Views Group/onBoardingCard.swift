@@ -10,55 +10,65 @@ import Foundation
 import CoreLocation
 import MapKit
 
+
+
 struct onBoardingCard: View {
-    
-    var data: [Parks2] = parksData
-    
+    var parikNumber : Int
     
     var body: some View {
         TabView{
             ScrollView{
-                //Text(parksData[0].name)
-                MapView(coordinate: parksData[0].locationCoordinate)
+                Text(parksData[parikNumber].name)
+                    .font(.largeTitle)
+                    .bold()
+                MapView(coordinate: parksData[parikNumber].locationCoordinate)
                     .frame(height: 250)
                     .ignoresSafeArea(edges: .top)
                     .cornerRadius(15)
-                imageCircleTheme(imageName: Image(parksData[0].imageName), imageSize: 200, ollw: 5, shRad: 5, cColor: Color.orange)
+                imageCircleTheme(imageName: Image(parksData[parikNumber].imageName), imageSize: 200, ollw: 5, shRad: 5, cColor: Color.orange)
                     .offset(y:-90)
                     .padding(.bottom,-90)
                 Divider()
+                
                 VStack(alignment: .leading){
-                    Text(parksData[0].name)
-                        .font(.largeTitle)
-                    HStack(alignment: .top){
-                        Text("In Borough of \(parksData[0].boroughs) in \(parksData[0].city)")
-                            .font(.title2)
-                            Spacer()
-                    }
-                }
-                .padding(.horizontal, 10)
-                Divider()
-                HStack{
-                    Text("About \(parksData[0].name)")
-                        .font(.largeTitle)
                     Spacer()
-                }
-                Text(parksData[0].description)
+                    Text("""
+Borough: \(parksData[0].boroughs)
+City: \(parksData[0].city)
+""")
                     .font(.title)
-                    .offset(y:10)
-                    .padding(.bottom,10)
+                    .padding(.leading, 20)
+                    Spacer()
+                    Divider()
+                    HStack{
+                        Text("About \(parksData[parikNumber].name)")
+                            .font(.largeTitle)
+                            .padding(.leading, 20)
+                        Spacer()
+                    }
+                    Text(parksData[parikNumber].description)
+                        .font(.title)
+                        .offset(y:10)
+                        //.padding(.bottom,10)
+                        .padding(EdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 10))
+                        .foregroundColor(.black)
+                        .multilineTextAlignment(.leading)
+                }
+                .background()
+                .cornerRadius(10)
             }
+            .tabViewStyle(PageTabViewStyle())
+            .padding(.vertical, 20)
+            .padding()
+            .background(LinearGradient(gradient: Gradient(colors: [.blue,.cyan]), startPoint: .top, endPoint: .bottom))
+            .ignoresSafeArea(.all, edges: [.top, .bottom])
         }
-        .tabViewStyle(PageTabViewStyle())
-        .padding(.vertical, 20)
-        .padding()
-        .background(LinearGradient(gradient: Gradient(colors: [.orange,.cyan]), startPoint: .top, endPoint: .bottom))
     }
 }
 
 struct onBoardingCard_Previews: PreviewProvider {
     static var previews: some View {
-        onBoardingCard()
+        onBoardingCard(parikNumber: 0)
     }
 }
 
