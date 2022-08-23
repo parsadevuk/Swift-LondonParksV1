@@ -1,0 +1,218 @@
+[
+    {
+        "id": 1001,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": 51.502464,
+            "longitude": -0.137000
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1002,
+        "name": "Green Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "Another of London’s “royal parks”, Green Park is a fitting name for this lush oasis in the centre of London.Within the city of Westminster, it covers about 40 acres in total. Unlike some of the other London parks, Green Park is relatively simple with no lakes and plenty of trees.While today it’s blissfully peaceful, its past was a little more chequered – it was once known as a hotspot for highwaymen and thieves.",
+        "shortInfo": "Another of London’s “royal parks”, Green Park is a fitting name for this lush oasis in the centre of London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": 51.5025,
+            "longitude": -0.1414
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1003,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "twinlake"
+    },
+    {
+        "id": 1004,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1005,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1006,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1007,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1008,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1009,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1010,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1011,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    },
+    {
+        "id": 1012,
+        "name": "St James's Park",
+        "parkType": "Rivers",
+        "boroughs": "City of Westminster",
+        "description": "St James’s Park is hands down our favourite of the famous parks in London. Flanked by Buckingham Palace to one side, The Mall, Westminster and Horse Guards Parade to the others, St James’s Park is a peaceful and picturesque green space covering about 23 hectares. It’s hard to believe that you can find somewhere so quiet in between some of London’s most important spots (it’s also right next to 10 Downing Street) – but that’s London for you. The park is particularly loved by bird watchers, as there is a large lake with two islands within it. Around it, there are various birds including pelicans, waterfowl and duck. \n The sight of the lake, islands and birds certainly makes it a gorgeous sight. If you’re looking for nice parks in London, then James’s Park deserves a spot near the top of your list.",
+        "shortInfo": "St James's Park is a 23-hectare (57-acre) park in the City of Westminster, central London.",
+        "city": "London",
+        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "isFeatured": true,
+        "isFavorite": true,
+        "gallery": ["image1","image2","image3","image4"],
+        "coordinates": {
+            "latitude": -0.137000,
+            "longitude": 51.502464
+        },
+        "imageName": "turtlerock"
+    }
+]

@@ -6,14 +6,24 @@
 //
 import SwiftUI
 
+
 func gMap(latitude:Double, longitude:Double){
-    let url = URL(string: "comgooglemaps://?saddr=&daddr=\(latitude),\(longitude)&directionsmode=driving")
+    
+
+    let url = "comgooglemaps://?saddr=My+Location&daddr=\(latitude),\(longitude)"
+    
+    guard let url = URL.init(string: url)
+            else { return }
+        UIApplication.shared.open(url,options: [:])
+        { (success) in
+            print ("opening...")
+        }
+}
+
+
+func appleMap(latitude:Double, longitude:Double){
+    let url = URL(string: "maps://?saddr=My+Location&daddr=lon=\(latitude),\(longitude)")
     if UIApplication.shared.canOpenURL(url!) {
           UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-    }
-    else{
-          let urlBrowser = URL(string: "https://www.google.co.in/maps/dir/??saddr=&daddr=\(latitude),\(longitude)&directionsmode=driving")
-
-           UIApplication.shared.open(urlBrowser!, options: [:], completionHandler: nil)
     }
 }

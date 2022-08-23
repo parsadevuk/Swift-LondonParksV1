@@ -11,9 +11,19 @@ import Foundation
 
 struct ContentView: View {
     
+    let nElement = parksData.count - 1
+    
     var body: some View {
         
-        onBoardingCard(parkNumber: 0)
+        TabView{
+            ForEach((0...nElement), id: \.self){
+                item in
+                onBoardingCard(parkNumber: item)
+                .padding(.horizontal, 10)
+            }
+        }
+        .tabViewStyle(PageTabViewStyle())
+        //.padding(.vertical,20)
         
     }
 }

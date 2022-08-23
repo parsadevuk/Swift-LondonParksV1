@@ -24,6 +24,7 @@
 		EE52C96B28AAF914004C2E00 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52C96A28AAF914004C2E00 /* extensions.swift */; };
 		EE65944528A95D4500E35C9C /* onBoardingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65944428A95D4500E35C9C /* onBoardingCard.swift */; };
 		EE65944928A9632700E35C9C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65944828A9632700E35C9C /* MapView.swift */; };
+		EEA48C8128ABE072004657EF /* FullDetailsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA48C8028ABE072004657EF /* FullDetailsPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		EE52C96A28AAF914004C2E00 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		EE65944428A95D4500E35C9C /* onBoardingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onBoardingCard.swift; sourceTree = "<group>"; };
 		EE65944828A9632700E35C9C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		EEA48C8028ABE072004657EF /* FullDetailsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDetailsPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,6 @@
 				EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */,
 				EE49A2B128A7D67C001B1A43 /* Parks.swift */,
 				EE49A2B628A80EAC001B1A43 /* landmarkData.json */,
-				EE49A2AB28A7D54D001B1A43 /* londonParksData.json */,
 			);
 			path = "Resources Group";
 			sourceTree = "<group>";
@@ -124,6 +125,7 @@
 				EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */,
 				EE65944428A95D4500E35C9C /* onBoardingCard.swift */,
 				EE65944828A9632700E35C9C /* MapView.swift */,
+				EEA48C8028ABE072004657EF /* FullDetailsPage.swift */,
 			);
 			path = "Views Group";
 			sourceTree = "<group>";
@@ -133,6 +135,7 @@
 			children = (
 				EE49A2BE28A85E53001B1A43 /* ParksModel.swift */,
 				EE09599228A9521A006C28BD /* londonParksData.swift */,
+				EE49A2AB28A7D54D001B1A43 /* londonParksData.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				EE52C96928AAF7B1004C2E00 /* MapProcess.swift in Sources */,
 				EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */,
 				EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */,
+				EEA48C8128ABE072004657EF /* FullDetailsPage.swift in Sources */,
 				EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -3,7 +3,10 @@
 //  LondonParks
 //
 //  Created by Parsa Shobany on 13/08/2022.
-//
+//https://www.cntraveller.com/gallery/parks-in-london
+//https://www.londonxlondon.com/parks-in-london/
+
+
 
 import Foundation
 import SwiftUI
@@ -17,13 +20,13 @@ struct Parks2 : Hashable, Codable {
     var description: String
     var shortInfo: String
     var city: String
-    var gradientColors: [String]
-    var picFrameColor: String
+    var colorSets: [String]
+    //Color set -- first two are gradiant color- 3rd one is frame color
     var isFeatured: Bool
     var isFavorite: Bool
     var gallery : [String]
     var imageName: String
-    private var coordinates: Coordinates
+    var coordinates: Coordinates
     var locationCoordinate: CLLocationCoordinate2D {
         CLLocationCoordinate2D(
             latitude: coordinates.latitude,

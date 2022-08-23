@@ -15,27 +15,21 @@ import MapKit
 struct onBoardingCard: View {
     var parkNumber : Int
     
-    
     var body: some View {
         let varibleColor : [Color] = [
-            (Color(hex: parksData[parkNumber].gradientColors[0])!),
-            (Color(hex: parksData[parkNumber].gradientColors[1])!),
-            (Color(hex: parksData[parkNumber].picFrameColor)!)
-            ]
-        //gColor s are gradient colors
-        TabView{
+            (Color(hex: parksData[parkNumber].colorSets[0])!),
+            (Color(hex: parksData[parkNumber].colorSets[1])!),
+            (Color(hex: parksData[parkNumber].colorSets[2])!)]
+        VStack{
             ScrollView{
                 Text(parksData[parkNumber].name)
                     .font(.largeTitle)
                     .bold()
-                    .foregroundColor(.black)
-                MapView(coordinate: parksData[parkNumber].locationCoordinate)
-                    .frame(height: 200)
-//                    .offset(y: -30)
-//                    .padding(.bottom, -30)
-                    .ignoresSafeArea(edges: .top)
-                    .cornerRadius(15)
-                    .shadow(color: varibleColor[2], radius: 10)
+//                MapView(number: parkNumber)
+//                    .frame(height: 200)
+//                    .ignoresSafeArea(edges: .top)
+//                    .cornerRadius(15)
+//                    .shadow(color: varibleColor[2], radius: 10)
                 imageCircleTheme(imageName: Image(parksData[parkNumber].imageName), imageSize: 200, ollw: 5, shRad: 5, cColor: varibleColor[2])
                     .offset(y:-90)
                     .padding(.bottom,-90)
@@ -43,9 +37,9 @@ struct onBoardingCard: View {
                 VStack(alignment: .leading){
                     Spacer()
                     Text("""
-Borough: \(parksData[0].boroughs)
-City: \(parksData[0].city)
-""")
+                    Borough: \(parksData[0].boroughs)
+                    City: \(parksData[0].city)
+                    """)
                     .font(.title)
                     .padding(.leading, 20)
                     Spacer()
@@ -58,14 +52,11 @@ City: \(parksData[0].city)
                     }
                     Text(parksData[parkNumber].shortInfo)
                         .font(.body)
-                        //.offset(y:10)
-                        //.padding(.bottom,10)
                         .padding(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 10))
-                        .foregroundColor(.black)
                         .multilineTextAlignment(.leading)
                     HStack(alignment: .center, spacing: 0){
                         Button(action: {
-                            gMap(latitude: parksData[parkNumber].locationCoordinate.latitude, longitude: parksData[parkNumber].locationCoordinate.longitude)
+                          gMap(latitude: parksData[parkNumber].locationCoordinate.latitude, longitude: parksData[parkNumber].locationCoordinate.longitude)
                         }, label: {
                             Text("Google Map")
                             Image("icon-google-maps")
@@ -74,13 +65,16 @@ City: \(parksData[0].city)
                                 .shadow(radius: 5)
                         })
                         Spacer()
-                        Text("Map")
-                        Image("icon-apple-maps")
-                            .resizable()
-                            .frame(width: 50, height: 50, alignment: .leading)
-                            .shadow(radius: 5)
-                    }
-                    .padding(.horizontal, 30)
+                        Button(action: {
+                            appleMap(latitude: parksData[parkNumber].locationCoordinate.latitude, longitude: parksData[parkNumber].locationCoordinate.longitude)
+                        }, label:{
+                            Text("Map")
+                            Image("icon-apple-maps")
+                                .resizable()
+                                .frame(width: 50, height: 50, alignment: .leading)
+                                .shadow(radius: 5)
+                        })
+                        .padding(.horizontal, 30)}
                         Text("Full description")
                             .frame(maxWidth: .infinity, alignment: .trailing)
                             .font(.largeTitle)
@@ -90,18 +84,19 @@ City: \(parksData[0].city)
                 .cornerRadius(10)
             }
             .tabViewStyle(PageTabViewStyle())
-            .padding(.vertical, 20)
             .padding(10)
+            .padding(.bottom, 30)
             .background(LinearGradient(gradient: Gradient(colors: [varibleColor[0],varibleColor[1]]), startPoint: .top, endPoint: .bottom))
-            .ignoresSafeArea(.all, edges: [.top, .bottom])
+            .ignoresSafeArea(.all, edges: [ .bottom])
             .shadow(color: varibleColor[2], radius: 10)
+            .cornerRadius(50)
         }
     }
 }
 
 struct onBoardingCard_Previews: PreviewProvider {
     static var previews: some View {
-        onBoardingCard(parkNumber: 0)
+        onBoardingCard(parkNumber: 1)
             
     }
 }
