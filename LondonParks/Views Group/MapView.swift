@@ -12,9 +12,10 @@ import CoreLocationUI
 struct MapView: View {
 
     var number : Int!
-    init(number : Int!) {
-        self.number = number ?? 0
-    }
+    
+//    init(number : Int!) {
+//        self.number = number ?? 0
+//    }
     
 
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D( latitude: parksData[number].locationCoordinate.latitude, longitude: parksData[number].locationCoordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03))
