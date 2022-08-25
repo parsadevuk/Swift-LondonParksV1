@@ -19,12 +19,9 @@ struct ContentView: View {
             ForEach((0...nElement), id: \.self){
                 item in
                 onBoardingCard(parkNumber: item)
-                .padding(.horizontal, 10)
             }
         }
         .tabViewStyle(PageTabViewStyle())
-        //.padding(.vertical,20)
-        
     }
 }
 

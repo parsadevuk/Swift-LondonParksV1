@@ -21,6 +21,7 @@ struct onBoardingCard: View {
             (Color(hex: parksData[parkNumber].colorSets[1])!),
             (Color(hex: parksData[parkNumber].colorSets[2])!)]
         VStack{
+            Spacer()
             ScrollView{
                 Text(parksData[parkNumber].name)
                     .font(.largeTitle)
@@ -84,13 +85,14 @@ struct onBoardingCard: View {
                 .cornerRadius(10)
             }
             .tabViewStyle(PageTabViewStyle())
-            .padding(10)
             .padding(.bottom, 30)
-            .background(LinearGradient(gradient: Gradient(colors: [varibleColor[0],varibleColor[1]]), startPoint: .top, endPoint: .bottom))
-            .ignoresSafeArea(.all, edges: [ .bottom])
-            .shadow(color: varibleColor[2], radius: 10)
-            .cornerRadius(50)
+            .padding(.horizontal,10)
         }
+        .background(LinearGradient(gradient: Gradient(colors: [varibleColor[0],varibleColor[1]]), startPoint: .top, endPoint: .bottom))
+        .ignoresSafeArea(.all, edges: [ .bottom])
+        .shadow(color: varibleColor[2], radius: 10)
+        .cornerRadius(30, antialiased: true)
+        .padding(.horizontal,20)
     }
 }
 
