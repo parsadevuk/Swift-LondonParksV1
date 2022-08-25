@@ -11,7 +11,7 @@ import CoreLocationUI
 
 struct MapView: View {
 
-    var number : Int!
+    var number : Int
     
     
 //    init(number : Int!) {
@@ -26,12 +26,9 @@ struct MapView: View {
         VStack{
         Map(coordinateRegion: $region)
             .frame(width: 400, height: 400, alignment: .top)
-        Image(parksData[number].imageName)
-            .frame(width: 200, height: 200, alignment: .bottom)
-        
         }
+        .onAppear {  region = MKCoordinateRegion(center: CLLocationCoordinate2D( latitude: parksData[number].locationCoordinate.latitude, longitude: parksData[number].locationCoordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)) }
     }
-
     private func setRegion(_ coordinate: CLLocationCoordinate2D) {
             region = MKCoordinateRegion(
                 center: coordinate,

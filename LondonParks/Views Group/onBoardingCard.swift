@@ -25,11 +25,11 @@ struct onBoardingCard: View {
                 Text(parksData[parkNumber].name)
                     .font(.largeTitle)
                     .bold()
-//                MapView(number: parkNumber)
-//                    .frame(height: 200)
-//                    .ignoresSafeArea(edges: .top)
-//                    .cornerRadius(15)
-//                    .shadow(color: varibleColor[2], radius: 10)
+                MapView(number: parkNumber)
+                    .frame(height: 200)
+                    .ignoresSafeArea(edges: .top)
+                    .cornerRadius(15)
+                    .shadow(color: varibleColor[2], radius: 10)
                 imageCircleTheme(imageName: Image(parksData[parkNumber].imageName), imageSize: 200, ollw: 5, shRad: 5, cColor: varibleColor[2])
                     .offset(y:-90)
                     .padding(.bottom,-90)
@@ -50,7 +50,7 @@ struct onBoardingCard: View {
                             .padding(.leading, 20)
                         Spacer()
                     }
-                    Text(parksData[parkNumber].shortInfo)
+                    Text(parksData[parkNumber].description)
                         .font(.body)
                         .padding(EdgeInsets(top: 0, leading: 20, bottom: 10, trailing: 10))
                         .multilineTextAlignment(.leading)
@@ -96,7 +96,7 @@ struct onBoardingCard: View {
 
 struct onBoardingCard_Previews: PreviewProvider {
     static var previews: some View {
-        onBoardingCard(parkNumber: 1)
+        onBoardingCard(parkNumber: 0)
             
     }
 }
