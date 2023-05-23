@@ -25,7 +25,7 @@
         "description": "Another of London’s “royal parks”, Green Park is a fitting name for this lush oasis in the centre of London.Within the city of Westminster, it covers about 40 acres in total. Unlike some of the other London parks, Green Park is relatively simple with no lakes and plenty of trees.While today it’s blissfully peaceful, its past was a little more chequered – it was once known as a hotspot for highwaymen and thieves.",
         "shortInfo": "Another of London’s “royal parks”, Green Park is a fitting name for this lush oasis in the centre of London.",
         "city": "London",
-        "colorSets": ["#2193b0","#6dd5ed","#06BCC1"],
+        "colorSets": ["#537780","#A1AAB3","#343434"],
         "isFeatured": true,
         "isFavorite": true,
         "gallery": ["image1","image2","image3","image4"],

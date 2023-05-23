@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EDDE631829CBAEBB00081727 /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDE631729CBAEBB00081727 /* Gallery.swift */; };
+		ED037D032A1CCEA000BB8D6C /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED037D022A1CCEA000BB8D6C /* WelcomeScreen.swift */; };
 		EDF5A8E829C736C900D8150F /* Computations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5A8E729C736C900D8150F /* Computations.swift */; };
 		EE09599328A9521A006C28BD /* londonParksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09599228A9521A006C28BD /* londonParksData.swift */; };
 		EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A29D28A7D443001B1A43 /* LondonParksApp.swift */; };
@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EDDE631729CBAEBB00081727 /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
+		ED037D022A1CCEA000BB8D6C /* WelcomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
 		EDF5A8E729C736C900D8150F /* Computations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computations.swift; sourceTree = "<group>"; };
 		EE09599228A9521A006C28BD /* londonParksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = londonParksData.swift; sourceTree = "<group>"; };
 		EE49A29A28A7D443001B1A43 /* LondonParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +130,7 @@
 		EE49A2B528A7DA49001B1A43 /* Views Group */ = {
 			isa = PBXGroup;
 			children = (
+				ED037D022A1CCEA000BB8D6C /* WelcomeScreen.swift */,
 				EE49A29F28A7D443001B1A43 /* ContentView.swift */,
 				EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */,
 				EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */,
@@ -137,7 +138,6 @@
 				EE65944828A9632700E35C9C /* MapView.swift */,
 				EEA48C8028ABE072004657EF /* FullDetailsPage.swift */,
 				EEA85E3B28BE6E2C0009557E /* GalleryView.swift */,
-				EDDE631729CBAEBB00081727 /* Gallery.swift */,
 			);
 			path = "Views Group";
 			sourceTree = "<group>";
@@ -236,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED037D032A1CCEA000BB8D6C /* WelcomeScreen.swift in Sources */,
 				EE49A2BC28A85A62001B1A43 /* LondonParkData.xcdatamodeld in Sources */,
 				EE09599328A9521A006C28BD /* londonParksData.swift in Sources */,
 				EEA85E4028BEC90E0009557E /* geometrySizes.swift in Sources */,
@@ -251,7 +252,6 @@
 				EE52C96928AAF7B1004C2E00 /* MapProcess.swift in Sources */,
 				EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */,
 				EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */,
-				EDDE631829CBAEBB00081727 /* Gallery.swift in Sources */,
 				EEA48C8128ABE072004657EF /* FullDetailsPage.swift in Sources */,
 				EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */,
 				EDF5A8E829C736C900D8150F /* Computations.swift in Sources */,

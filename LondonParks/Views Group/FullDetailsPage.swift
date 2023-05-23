@@ -28,8 +28,10 @@ struct FullDetailsPage: View {
                 .frame(minWidth: UIScreen.screenWidth-30)
             Text(parksData[parkNumber].description)
                 .padding(.horizontal,30)
-            Gallery(images: parkImages(parkID: "1001"))
-                .frame(minWidth: geometrySizes.galleryH,idealWidth: 400,)
+            
+            /// Fix Here///
+            //Gallery(images: parkImages(parkID: "1001"))
+                //.frame(minWidth: geometrySizes.galleryH,idealWidth: 400,)
                 //.frame(width: geometrySizes.galleryH,height: geometrySizes.galleryH)
         }
         .padding(.horizontal,30)
