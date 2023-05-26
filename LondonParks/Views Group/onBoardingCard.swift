@@ -102,6 +102,7 @@ struct onBoardingCard: View {
                     .frame(maxWidth: UIScreen.screenWidth - 60 , alignment: .center)
                     
                     imageCircleTheme(imageName: Image("\(parksData[parkNumber].id)-01"), imageSize: geometrySizes.circleDiameter, ollw: 5, shRad: 5, cColor: varibleColor[2])
+                            .offset(<#T##offset: CGSize##CGSize#>)
                 }
                 }
                 .tabViewStyle(PageTabViewStyle())
