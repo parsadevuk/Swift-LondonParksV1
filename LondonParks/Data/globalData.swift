@@ -15,7 +15,8 @@ let invertPrimary : Color = Color(UIColor.systemBackground)
 
 
 extension Font {
-    static let pDLargeTitle = Font.custom("Roboto-Bold", size: 60, relativeTo: .caption)
+    static let pDVeryLargeTitle = Font.custom("Roboto-Bold", size: 60, relativeTo: .caption)
+    static let pDLargeTitle = Font.custom("Roboto-Bold", size: 52, relativeTo: .caption)
     static let pDMediumFont = Font.custom("Roboto-Regular", size: 48, relativeTo: .caption)
     static let pDMediumSmallFont = Font.custom("Roboto-Medium", size:34 , relativeTo: .caption)
     static let pDSmallFont = Font.custom("Roboto-Medium", size: 12, relativeTo: .caption)

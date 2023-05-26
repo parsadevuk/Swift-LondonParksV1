@@ -38,7 +38,7 @@ struct WelcomeScreen: View {
             .padding(.bottom)
             .padding(.horizontal)
         }
-        .font(.pDLargeTitle)
+        .font(.pDVeryLargeTitle)
     }
     
     

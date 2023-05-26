@@ -10,6 +10,8 @@ import Foundation
 import CoreLocation
 import MapKit
 
+//imageCircleTheme(imageName: Image("\(parksData[parkNumber].id)-01"), imageSize: geometrySizes.circleDiameter, ollw: 5, shRad: 5, cColor: varibleColor[2])
+
 
 struct onBoardingCard: View {
     var boarding = true
@@ -21,20 +23,20 @@ struct onBoardingCard: View {
             (Color(hex: parksData[parkNumber].colorSets[1])!),
             (Color(hex: parksData[parkNumber].colorSets[2])!)]
             
-            VStack{
+            ScrollView{
                 Spacer()
-                ScrollView{
-                    Text(parksData[parkNumber].name)
-                        .font(.largeTitle)
-                        .bold()
+                ZStack(alignment: .top){
+                VStack{
+                    Text(parksData[parkNumber].name).scaledToFit()
+                        .font(.custom("Roboto-Black", size: 30, relativeTo: .caption))
+                        .frame(height: 40)
                     MapView(number: parkNumber)
                         .frame(maxWidth: geometrySizes.mapWidth ,maxHeight: geometrySizes.mapHeight, alignment: .center)
                         .ignoresSafeArea(edges: .top)
                         .cornerRadius(15)
                         .shadow(color: varibleColor[2], radius: 10)
                     Spacer()
-                        .frame(height: geometrySizes.circleDiameter-20)
-                    ZStack{
+                        .frame(height: geometrySizes.circleDiameter*0.9)
                     VStack(alignment: .leading){
                         Spacer()
                         Text("""
@@ -100,10 +102,9 @@ struct onBoardingCard: View {
                     .background()
                     .cornerRadius(10)
                     .frame(maxWidth: UIScreen.screenWidth - 60 , alignment: .center)
-                    
-                    imageCircleTheme(imageName: Image("\(parksData[parkNumber].id)-01"), imageSize: geometrySizes.circleDiameter, ollw: 5, shRad: 5, cColor: varibleColor[2])
-                            .offset(<#T##offset: CGSize##CGSize#>)
                 }
+                    imageCircleTheme(imageName: Image("\(parksData[parkNumber].id)-01"), imageSize: geometrySizes.circleDiameter, ollw: 5, shRad: 5, cColor: varibleColor[2])
+                        .offset(y: geometrySizes.mapHeight+30)
                 }
                 .tabViewStyle(PageTabViewStyle())
                 .padding(.bottom, 30)
