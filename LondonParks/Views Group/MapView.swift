@@ -7,38 +7,48 @@
 
 import SwiftUI
 import MapKit
-import CoreLocationUI
 
-struct MapView: View {
-
-    var number : Int
-    
-    
-//    init(number : Int!) {
-//        self.number = number ?? 0
-//    }
-    
-
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D( latitude: 0.0, longitude: 0.0), span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03))
-
-
-    var body: some View {
-        VStack{
-        Map(coordinateRegion: $region)
-            .frame(width: 400, height: 400, alignment: .top)
-        }
-        .onAppear {  region = MKCoordinateRegion(center: CLLocationCoordinate2D( latitude: parksData[number].locationCoordinate.latitude, longitude: parksData[number].locationCoordinate.longitude), span: MKCoordinateSpan(latitudeDelta: 0.03, longitudeDelta: 0.03)) }
+struct MapView: UIViewRepresentable {
+    var number : Int = 0
+    var latitude: Double {
+        return parksData[number].coordinates.latitude
     }
-    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
-            region = MKCoordinateRegion(
-                center: coordinate,
-                span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-            )
-        }
+    var longitude: Double {
+        return parksData[number].coordinates.longitude
+    }
+    var zoomLevel: Double = 0.01
+    
+    func makeUIView(context: Context) -> MKMapView {
+        let mapView = MKMapView()
+        mapView.delegate = context.coordinator
+        return mapView
+    }
+    
+    func updateUIView(_ mapView: MKMapView, context: Context) {
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let span = MKCoordinateSpan(latitudeDelta: zoomLevel, longitudeDelta: zoomLevel)
+        let region = MKCoordinateRegion(center: coordinate, span: span)
+        mapView.setRegion(region, animated: true)
+        let parkAnnotation = MKPointAnnotation()
+        parkAnnotation.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        parkAnnotation.title = "🎡🎠\(parksData[number].name)🎢🍭🥨"
+        mapView.addAnnotation(parkAnnotation)
+    }
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
+    class Coordinator: NSObject, MKMapViewDelegate {
+    }
 }
+
+
+func createMapView(latitude: Double, longitude: Double, zoomLevel: Double) -> MapView {
+    return MapView(number: 0, zoomLevel: zoomLevel)
+}
+
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(number: 1)
+        MapView(number: 0, zoomLevel: 0.01)// Coordinates for San Francisco
     }
 }

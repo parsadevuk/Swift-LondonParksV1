@@ -11,7 +11,8 @@ import SwiftUI
 
 var parkN : Int = 0
 let invertPrimary : Color = Color(UIColor.systemBackground)
-
+let dragNumber: Int = 35
+let buttonScale = 1.5
 
 
 extension Font {

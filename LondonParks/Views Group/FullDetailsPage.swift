@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct FullDetailsPage: View {
+    @Environment(\.dismiss) private var dismiss
+    @State var isExpanded = false
     
     var parkNumber: Int
     init(parkNumber: Int? = nil) {
@@ -20,46 +22,55 @@ struct FullDetailsPage: View {
             (Color(hex: parksData[parkNumber].colorSets[1])!),
             (Color(hex: parksData[parkNumber].colorSets[2])!)]
         let gradient = LinearGradient(gradient: Gradient(colors: [variableColor[0],variableColor[1]]), startPoint: .top, endPoint: .bottom)
-        let nElement = parksData[parkNumber].gallery.count - 1
         
-        ScrollView {
-            Image(parksData[parkNumber].imageName)
+        
+        ScrollView(){
+            Image("\(parksData[parkNumber].id)-01")
                 .resizable()
-                .frame(minWidth: UIScreen.screenWidth-30)
-            Text(parksData[parkNumber].description)
-                .padding(.horizontal,30)
+                .frame(height: UIScreen.screenHeight*0.3)
+                .scaledToFit()
+            VStack(alignment: .leading){
+                Text(parksData[parkNumber].name)
+                    .font(.custom("Roboto-Black", size: 30, relativeTo: .caption))
+                    .padding(.horizontal,30)
+                Text(parksData[parkNumber].description)
+                    .padding(.horizontal,30)
+                Spacer()
+            }
+            GalleryView()
+                .frame(width: geometrySizes.galleryW, height: geometrySizes.galleryH)
             
-            /// Fix Here///
-            //Gallery(images: parkImages(parkID: "1001"))
-                //.frame(minWidth: geometrySizes.galleryH,idealWidth: 400,)
-                //.frame(width: geometrySizes.galleryH,height: geometrySizes.galleryH)
         }
-        .padding(.horizontal,30)
-        .navigationTitle(parksData[parkNumber].name)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarLeading) {
-                NavigationLink(destination: ContentView()) {
-                    Text("<Back")
-                        .foregroundColor(Color.black)
-                }
-            }
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("Wikipedia") {
-                    print("Wikipedia Button")
-                }
-            }
-        }
-        .frame(maxWidth: UIScreen.screenWidth-10, maxHeight: UIScreen.screenHeight-10)
+        .frame(maxWidth: UIScreen.screenWidth, maxHeight: UIScreen.screenHeight-10)
         .background(gradient)
-        .background(.black)
+        .background(Color.white) // Set background color to white
+        .edgesIgnoringSafeArea(.top)
+        
+        .navigationBarBackButtonHidden(true)
+        .toolbar(content: {
+            ToolbarItem(placement: .navigationBarTrailing){
+                Button(action: {
+                    dismiss()
+                }, label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(.black) // Change the color to black
+                        .padding()
+                        .background(Color.black.opacity(0.5))
+                        .clipShape(Circle())
+                        .padding(10)
+                }
+                )
+                
+            }
+            
+        })
     }
+    
 }
 
 struct FullDetailsPage_Previews: PreviewProvider {
     static var previews: some View {
         FullDetailsPage(parkNumber: 0)
-            .previewDevice("iPhone 14 Pro Max")
+            .previewDevice("iPhone 12 Pro Max")
     }
 }
-
-

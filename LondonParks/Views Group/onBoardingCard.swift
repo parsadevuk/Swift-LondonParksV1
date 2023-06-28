@@ -10,19 +10,16 @@ import Foundation
 import CoreLocation
 import MapKit
 
-//imageCircleTheme(imageName: Image("\(parksData[parkNumber].id)-01"), imageSize: geometrySizes.circleDiameter, ollw: 5, shRad: 5, cColor: varibleColor[2])
 
 
 struct onBoardingCard: View {
     var boarding = true
     let parkNumber : Int
-    
     var body: some View {
-        let varibleColor : [Color] = [
+        @State var varibleColor : [Color] = [
             (Color(hex: parksData[parkNumber].colorSets[0])!),
             (Color(hex: parksData[parkNumber].colorSets[1])!),
             (Color(hex: parksData[parkNumber].colorSets[2])!)]
-            
             ScrollView{
                 Spacer()
                 ZStack(alignment: .top){
@@ -30,8 +27,9 @@ struct onBoardingCard: View {
                     Text(parksData[parkNumber].name).scaledToFit()
                         .font(.custom("Roboto-Black", size: 30, relativeTo: .caption))
                         .frame(height: 40)
-                    MapView(number: parkNumber)
-                        .frame(maxWidth: geometrySizes.mapWidth ,maxHeight: geometrySizes.mapHeight, alignment: .center)
+                    MapView(number: parkNumber,zoomLevel: 0.01)
+                        .frame(width: geometrySizes.mapWidth, height: geometrySizes.mapHeight,
+                               alignment: .center)
                         .ignoresSafeArea(edges: .top)
                         .cornerRadius(15)
                         .shadow(color: varibleColor[2], radius: 10)
@@ -94,7 +92,6 @@ struct onBoardingCard: View {
                             .clipShape(Capsule())
                             .background(Color(hex: "\(parksData[parkNumber].colorSets[1])"))
                             .cornerRadius(25)
-                            
                             Spacer()
                         }
                         Spacer()
@@ -109,32 +106,24 @@ struct onBoardingCard: View {
                 .tabViewStyle(PageTabViewStyle())
                 .padding(.bottom, 30)
                 .frame( maxWidth: UIScreen.screenWidth-35, alignment: .center)
-                    
-
-                    
             }
             .background(LinearGradient(gradient:Gradient(colors:[varibleColor[0].opacity(0),varibleColor[1].opacity(1)]),startPoint: .topLeading,endPoint: .bottomTrailing))
             .ignoresSafeArea(.all, edges: [ .bottom])
             .shadow(color: varibleColor[2], radius: 10)
             .cornerRadius(30, antialiased: true)
             .padding(.horizontal,20)
-
-        
     }
 }
+
 
 struct onBoardingCard_Previews: PreviewProvider {
     static var previews: some View {
         onBoardingCard(parkNumber: 0)
-            .previewDevice("iPhone SE (3rd generation)")
-            .previewDisplayName("iPhone SE (3rd generation)")
+            .previewDevice("iPhone SE (1st generation)")
+            .previewDisplayName("iPhone SE (1st generation)")
         onBoardingCard(parkNumber: 0)
             .previewDevice("iPhone 14 Pro Max")
             .previewDisplayName("iPhone 14 Pro Max")
     }
 }
-
-
-
-
 

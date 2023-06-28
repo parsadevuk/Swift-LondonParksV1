@@ -20,6 +20,7 @@
 		ED037D1C2A1CD13C00BB8D6C /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED037D102A1CD13B00BB8D6C /* Roboto-BoldItalic.ttf */; };
 		ED037D1D2A1CD13C00BB8D6C /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED037D112A1CD13B00BB8D6C /* Roboto-LightItalic.ttf */; };
 		ED037D1E2A1CD13C00BB8D6C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ED037D122A1CD13B00BB8D6C /* Roboto-Bold.ttf */; };
+		EDDDD6312AD83E5A00B8A4A8 /* GalleryViewExpanded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDDD6302AD83E5A00B8A4A8 /* GalleryViewExpanded.swift */; };
 		EDF5A8E829C736C900D8150F /* Computations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5A8E729C736C900D8150F /* Computations.swift */; };
 		EE09599328A9521A006C28BD /* londonParksData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09599228A9521A006C28BD /* londonParksData.swift */; };
 		EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A29D28A7D443001B1A43 /* LondonParksApp.swift */; };
@@ -27,12 +28,10 @@
 		EE49A2A228A7D444001B1A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2A128A7D444001B1A43 /* Assets.xcassets */; };
 		EE49A2A528A7D444001B1A43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2A428A7D444001B1A43 /* Preview Assets.xcassets */; };
 		EE49A2AC28A7D54D001B1A43 /* londonParksData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2AB28A7D54D001B1A43 /* londonParksData.json */; };
-		EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */; };
 		EE49A2B028A7D5E2001B1A43 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */; };
 		EE49A2B228A7D67C001B1A43 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2B128A7D67C001B1A43 /* Parks.swift */; };
 		EE49A2B728A80EAC001B1A43 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE49A2B628A80EAC001B1A43 /* landmarkData.json */; };
 		EE49A2B928A841E9001B1A43 /* imageCircleTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */; };
-		EE49A2BC28A85A62001B1A43 /* LondonParkData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */; };
 		EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE49A2BE28A85E53001B1A43 /* ParksModel.swift */; };
 		EE52C96928AAF7B1004C2E00 /* MapProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52C96828AAF7B1004C2E00 /* MapProcess.swift */; };
 		EE52C96B28AAF914004C2E00 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE52C96A28AAF914004C2E00 /* extensions.swift */; };
@@ -59,6 +58,7 @@
 		ED037D112A1CD13B00BB8D6C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
 		ED037D122A1CD13B00BB8D6C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		ED037D1F2A1CD19200BB8D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EDDDD6302AD83E5A00B8A4A8 /* GalleryViewExpanded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewExpanded.swift; sourceTree = "<group>"; };
 		EDF5A8E729C736C900D8150F /* Computations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Computations.swift; sourceTree = "<group>"; };
 		EE09599228A9521A006C28BD /* londonParksData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = londonParksData.swift; sourceTree = "<group>"; };
 		EE49A29A28A7D443001B1A43 /* LondonParks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LondonParks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,12 +67,10 @@
 		EE49A2A128A7D444001B1A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE49A2A428A7D444001B1A43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE49A2AB28A7D54D001B1A43 /* londonParksData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = londonParksData.json; sourceTree = "<group>"; };
-		EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkDetailsView.swift; sourceTree = "<group>"; };
 		EE49A2AF28A7D5E2001B1A43 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		EE49A2B128A7D67C001B1A43 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
 		EE49A2B628A80EAC001B1A43 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageCircleTheme.swift; sourceTree = "<group>"; };
-		EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LondonParkData.xcdatamodel; sourceTree = "<group>"; };
 		EE49A2BE28A85E53001B1A43 /* ParksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksModel.swift; sourceTree = "<group>"; };
 		EE52C96828AAF7B1004C2E00 /* MapProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapProcess.swift; sourceTree = "<group>"; };
 		EE52C96A28AAF914004C2E00 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 		EE49A2B428A7DA3B001B1A43 /* Resources Group */ = {
 			isa = PBXGroup;
 			children = (
-				EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */,
 				EE49A2B128A7D67C001B1A43 /* Parks.swift */,
 				EE49A2B628A80EAC001B1A43 /* landmarkData.json */,
 			);
@@ -178,12 +175,12 @@
 				ED037D062A1CD10D00BB8D6C /* customFonts */,
 				ED037D022A1CCEA000BB8D6C /* WelcomeScreen.swift */,
 				EE49A29F28A7D443001B1A43 /* ContentView.swift */,
-				EE49A2AD28A7D58D001B1A43 /* ParkDetailsView.swift */,
 				EE49A2B828A841E9001B1A43 /* imageCircleTheme.swift */,
 				EE65944428A95D4500E35C9C /* onBoardingCard.swift */,
 				EE65944828A9632700E35C9C /* MapView.swift */,
 				EEA48C8028ABE072004657EF /* FullDetailsPage.swift */,
 				EEA85E3B28BE6E2C0009557E /* GalleryView.swift */,
+				EDDDD6302AD83E5A00B8A4A8 /* GalleryViewExpanded.swift */,
 			);
 			path = "Views Group";
 			sourceTree = "<group>";
@@ -238,7 +235,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					EE49A29928A7D443001B1A43 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -295,7 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED037D032A1CCEA000BB8D6C /* WelcomeScreen.swift in Sources */,
-				EE49A2BC28A85A62001B1A43 /* LondonParkData.xcdatamodeld in Sources */,
 				EE09599328A9521A006C28BD /* londonParksData.swift in Sources */,
 				EEA85E4028BEC90E0009557E /* geometrySizes.swift in Sources */,
 				EE65944528A95D4500E35C9C /* onBoardingCard.swift in Sources */,
@@ -307,9 +303,9 @@
 				EE52C96B28AAF914004C2E00 /* extensions.swift in Sources */,
 				EEA85E3E28BEB5000009557E /* globalData.swift in Sources */,
 				EE49A2B028A7D5E2001B1A43 /* ModelData.swift in Sources */,
+				EDDDD6312AD83E5A00B8A4A8 /* GalleryViewExpanded.swift in Sources */,
 				EE52C96928AAF7B1004C2E00 /* MapProcess.swift in Sources */,
 				EE49A2BF28A85E53001B1A43 /* ParksModel.swift in Sources */,
-				EE49A2AE28A7D58D001B1A43 /* ParkDetailsView.swift in Sources */,
 				EEA48C8128ABE072004657EF /* FullDetailsPage.swift in Sources */,
 				EE49A29E28A7D443001B1A43 /* LondonParksApp.swift in Sources */,
 				EDF5A8E829C736C900D8150F /* Computations.swift in Sources */,
@@ -323,6 +319,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -355,6 +352,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -370,7 +368,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_NSMainStoryboardFile = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -384,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -416,6 +415,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -425,7 +425,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_NSMainStoryboardFile = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -452,8 +452,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = W;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,8 +483,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = W;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,19 +519,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		EE49A2BA28A85A62001B1A43 /* LondonParkData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */,
-			);
-			currentVersion = EE49A2BB28A85A62001B1A43 /* LondonParkData.xcdatamodel */;
-			path = LondonParkData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = EE49A29228A7D443001B1A43 /* Project object */;
 }
